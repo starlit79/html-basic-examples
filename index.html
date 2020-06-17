@@ -23,11 +23,11 @@
         </p>
 
     <h1> Block level links</h1>
-    <h2>Click on the image to my github page</h2>
+    <h2>Click on below image to my github page</h2>
 
         <p>
             <a href="https://github.com/starlit79">
-                <img src="adriawsnails.jpg" alt="Adrian with snails">
+                <img src="adriawsnails.jpg" alt="Adrian with snails" width="100" height="150">
               </a>
         </p>
 
@@ -48,7 +48,7 @@
         Download the sales report (PDF, 10MB)
       </a></p>
       
-      <p><a href="https://vimeo.com/429007590?utm_source=email&utm_medium=vimeo-cliptranscode-201504&utm_campaign=29220" target="_blank">
+      <p><a href="https://vimeo.com/429848963" target="_blank">
         Watch the video of Adrian playing Gaston from Beauty and the Beast (stream opens in separate tab, HD quality)
       </a></p>
       
@@ -67,15 +67,70 @@
             02476 USA
         </address>
     </div>
-    <h1>Audio</h1>
+   
+   
+    <h1>1. Audio</h1>
 
     <p>
         Allows to embed an audio or video clip into a web page.
 Example: 
     </p>
 
-    <audio src="/assets/Hal.mp3" controls></audio>
+    <audio src="pianogaston.m4a" controls></audio>
 
+
+<h1>2. bdo</h1>
+<p>
+    Allows to override the direction of text.
+</p>
+
+The word <bdo dir="rtl">Awesome</bdo> is "Awesome" spelled backwards.
+
+<p>
+    dir: Defines in which direction the text should goes<br>
+    dir="rt1"<br>
+    <h2>The text goes from right to left</h2>
+    dir="ltr"
+    <h2>The text goes from left to right</h2>
+</p>
+
+<h1>3. br, defines a line break within a text. as shown above embedded in the example</h1>
+
+<h1>4. canvas: Defines an element where you can draw graphics.
+
+    Example:
+    
+    height
+    Defines the height of the canvas.
+    
+    "50"
+    Default is 150.
+    
+    width
+    Defines the width of the canvas.
+    
+    "200"
+    Default is 100.</h1>
+    <canvas>
+        Fallback text for non-supported browsers. height="50", width = "200"
+      </canvas>
+
+      <h1>5. embed: defines a container for external application</h1>
+
+      <iframe src="https://player.vimeo.com/video/429848963" width="640" height="360" 
+      frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <p>
+    <a href="https://vimeo.com/429848963">Untitled</a> from <a href="https://vimeo.com/user109562692">Hsiang Lin</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+    <h1>6. datalist: Defines a list of autocomplete options when using a text <code>input</code> </h1>
+    <label>Taiwan City</label><br>
+    <input list="Cities" placeholder="Type a City">
+    
+    <datalist id="cities">
+      <option value="Taipei">
+      <option value="Keelong">
+      <option value="Kaoshiun">
+    </datalist>
 </body>
 
 <footer>Lin 2020</footer>
