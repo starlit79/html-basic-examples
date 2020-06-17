@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+        HTML Basic Examples
+    </title>
+
+    </head><body><h1> The href attribute </h1>
+        <p> 
+        1. &lt; a &gt; tag defines a hyper link.  a-anchor element
+         The href attribute specifies the URL of the page the link goes to:
+        
+         <a href="https://github.com/starlit79">Link to my github page!</a>
+    
+        </p>
+
+    <h1> The src Attribute with width and height</h1>
+    
+        <p>The &lt; img &gt; tag is used to embed an image in an HTML page. 
+            The src attribute specifies the path to the image to be displayed:
+            <img src="./HTML Basic Examples_files/my kids.jpg" width="600" height="500">
+        </p>
+
+    <h1> Block level links</h1>
+    <h2>Click on the image to my github page</h2>
+
+        <p>
+            <a href="https://github.com/starlit79">
+                <img src="./HTML Basic Examples_files/adriawsnails.jpg" alt="Adrian with snails">
+              </a>
+        </p>
+
+    <h1> detail click to email</h1>
+    <a href="mailto:example@gmail.com?cc=name2@rapidtables.com&amp;bcc=name3@rapidtables.com&amp;subject=The%20subject%20of%20the%20email&amp;body=The%20body%20of%20the%20email">
+        Send mail with cc, bcc, subject and body
+      </a>
+
+      <h1> Linking to non-HTML resources — leave clear signposts</h1>
+      <p>
+        When linking to a resource that will be downloaded (like a PDF or Word document) or streamed (like video or audio) or has another potentially unexpected effect (opens a popup window, or loads a Flash movie), you should add clear wording to reduce any confusion. It can be quite annoying for example:
+
+        If you are on a low bandwidth connection, click a link and then a multiple megabyte download starts unexpectedly.
+        If you haven't got the Flash player installed, click a link and then suddenly get taken to a page that requires Flash.
+      </p>
+
+      <p><a href="http://www.example.com/large-report.pdf">
+        Download the sales report (PDF, 10MB)
+      </a></p>
+      
+      <p><a href="https://vimeo.com/429007590?utm_source=email&amp;utm_medium=vimeo-cliptranscode-201504&amp;utm_campaign=29220" target="_blank">
+        Watch the video of Adrian playing Gaston from Beauty and the Beast (stream opens in separate tab, HD quality)
+      </a></p>
+      
+      <p><a href="http://www.example.com/car-game">
+        Play the car game (requires Flash)
+      </a></p>
+
+
+    <h1>Area- Defines an interactive area within a map</h1>
+
+    
+    <div>
+        <address>
+            821 Smith Lane, <br>
+            Arlington, MA <br>
+            02476 USA
+        </address>
+    </div>
+    <h1>Audio</h1>
+
+    <p>
+        Allows to embed an audio or video clip into a web page.
+Example: 
+    </p>
+
+    <audio src="/assets/Hal.mp3" controls=""></audio>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<footer>Lin 2020</footer>
+
+</body></html>

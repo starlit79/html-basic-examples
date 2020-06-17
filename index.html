@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+    <title>
+        HTML Basic Examples
+    </title>
+
+    <h1> The href attribute </h1>
+        <p> 
+        1. < a > tag defines a hyper link.  a-anchor element
+         The href attribute specifies the URL of the page the link goes to:
+        
+         <a href="https://github.com/starlit79">Link to my github page!</a>
+    
+        </p>
+
+    <h1> The src Attribute with width and height</h1>
+    
+        <p>The < img > tag is used to embed an image in an HTML page. 
+            The src attribute specifies the path to the image to be displayed:
+            <img src="my kids.jpg" width="600" height="500">
+        </p>
+
+    <h1> Block level links</h1>
+    <h2>Click on below image to my github page</h2>
+
+        <p>
+            <a href="https://github.com/starlit79">
+                <img src="adriawsnails.jpg" alt="Adrian with snails" width="100" height="150">
+              </a>
+        </p>
+
+    <h1> detail click to email</h1>
+    <a href="mailto:example@gmail.com?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">
+        Send mail with cc, bcc, subject and body
+      </a>
+
+      <h1> Linking to non-HTML resources — leave clear signposts</h1>
+      <p>
+        When linking to a resource that will be downloaded (like a PDF or Word document) or streamed (like video or audio) or has another potentially unexpected effect (opens a popup window, or loads a Flash movie), you should add clear wording to reduce any confusion. It can be quite annoying for example:
+
+        If you are on a low bandwidth connection, click a link and then a multiple megabyte download starts unexpectedly.
+        If you haven't got the Flash player installed, click a link and then suddenly get taken to a page that requires Flash.
+      </p>
+
+      <p><a href="http://www.example.com/large-report.pdf">
+        Download the sales report (PDF, 10MB)
+      </a></p>
+      
+      <p><a href="https://vimeo.com/429848963" target="_blank">
+        Watch the video of Adrian playing Gaston from Beauty and the Beast (stream opens in separate tab, HD quality)
+      </a></p>
+      
+      <p><a href="http://www.example.com/car-game">
+        Play the car game (requires Flash)
+      </a></p>
+</head>
+<body>
+    <h1>Area- Defines an interactive area within a map</h1>
+
+    
+    <div>
+        <address>
+            821 Smith Lane, <br>
+            Arlington, MA <br>
+            02476 USA
+        </address>
+    </div>
+   
+   
+    <h1>1. Audio</h1>
+
+    <p>
+        Allows to embed an audio or video clip into a web page.
+Example: 
+    </p>
+
+    <audio src="pianogaston.m4a" controls></audio>
+
+
+<h1>2. bdo</h1>
+<p>
+    Allows to override the direction of text.
+</p>
+
+The word <bdo dir="rtl">Awesome</bdo> is "Awesome" spelled backwards.
+
+<p>
+    dir: Defines in which direction the text should goes<br>
+    dir="rt1"<br>
+    <h2>The text goes from right to left</h2>
+    dir="ltr"
+    <h2>The text goes from left to right</h2>
+</p>
+
+<h1>3. br, defines a line break within a text. as shown above embedded in the example</h1>
+
+<h1>4. canvas: Defines an element where you can draw graphics.
+
+    Example:
+    
+    height
+    Defines the height of the canvas.
+    
+    "50"
+    Default is 150.
+    
+    width
+    Defines the width of the canvas.
+    
+    "200"
+    Default is 100.</h1>
+    <canvas>
+        Fallback text for non-supported browsers. height="50", width = "200"
+      </canvas>
+
+      <h1>5. embed: defines a container for external application</h1>
+
+      <iframe src="https://player.vimeo.com/video/429848963" width="640" height="360" 
+      frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <p>
+    <a href="https://vimeo.com/429848963">Untitled</a> from <a href="https://vimeo.com/user109562692">Hsiang Lin</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+    <h1>6. datalist: Defines a list of autocomplete options when using a text <code>input</code> </h1>
+    <label>Taiwan City</label><br>
+    <input list="Cities" placeholder="Type a City">
+    
+    <datalist id="cities">
+      <option value="Taipei">
+      <option value="Keelong">
+      <option value="Kaoshiun">
+    </datalist>
+</body>
+
+<footer>Lin 2020</footer>
+</html>
